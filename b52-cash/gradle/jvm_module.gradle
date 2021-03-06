@@ -4,7 +4,7 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlinx-serialization'
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
 
     compileOnly dep.injectAnnotation
     compileOnly dep.jetAnnotation
@@ -17,55 +17,55 @@ dependencies {
     testImplementation dep.mockito
     testImplementation dep.truth
 
-    implementation dep.kotlin.stdlibJdk8
-    implementation dep.kotlin.reflect
-    implementation dep.ktSerialization
-    implementation dep.ktCoroutines.core
-    implementation dep.ktCoroutines.rxJava
+    compileOnly dep.kotlin.stdlibJdk8
+    compileOnly dep.kotlin.reflect
+    compileOnly dep.ktSerialization
+    compileOnly dep.ktCoroutines.core
+    compileOnly dep.ktCoroutines.rxJava
 
-    implementation dep.okHttp.okHttp
-    implementation dep.okHttp.loggingInterceptor
-    implementation dep.okio
-    implementation dep.retrofit.retrofit
-    implementation dep.retrofit.rxJavaAdapter
-    implementation dep.retrofit.moshiConverter
-    implementation dep.moshi.moshi
-    implementation dep.moshi.kotlin
+    compileOnly dep.okHttp.okHttp
+    compileOnly dep.okHttp.loggingInterceptor
+    compileOnly dep.okio
+    compileOnly dep.retrofit.retrofit
+    compileOnly dep.retrofit.rxJavaAdapter
+    compileOnly dep.retrofit.moshiConverter
+    compileOnly dep.moshi.moshi
+    compileOnly dep.moshi.kotlin
     kapt dep.moshi.codegen
 
-    implementation dep.rxJava.rxJava
-    implementation dep.rxJava.stream
+    compileOnly dep.rxJava.rxJava
+    compileOnly dep.rxJava.stream
 
     compileOnly dep.autoValue.autoValue
     kapt dep.autoValue.compiler
-    implementation dep.dagger.dagger
+    compileOnly dep.dagger.dagger
     kapt dep.dagger.compiler
 
     compileOnly dep.androidX.annotation.annotation
-    implementation dep.androidX.collection.collection
-    implementation dep.androidX.collection.ktx
-    implementation dep.androidX.room.common
-    implementation dep.androidX.room.migration
-    implementation dep.androidX.paging.common
-    implementation dep.androidX.paging.commonKtx
+    compileOnly dep.androidX.collection.collection
+    compileOnly dep.androidX.collection.ktx
+    compileOnly dep.androidX.room.common
+    compileOnly dep.androidX.room.migration
+    compileOnly dep.androidX.paging.common
+    compileOnly dep.androidX.paging.commonKtx
 
-    implementation dep.store
+    compileOnly dep.store
 }
 
-//apply plugin: 'com.vanniktech.maven.publish'
-//mavenPublish {
-//    releaseSigningEnabled = false
-//    targets {
-//        uploadArchives {
-//            releaseRepositoryUrl = RELEASE_REPOSITORY_URL
-//            snapshotRepositoryUrl = SNAPSHOT_REPOSITORY_URL
-//            repositoryUsername = SONATYPE_NEXUS_USERNAME
-//            repositoryPassword = SONATYPE_NEXUS_PASSWORD
-//        }
-//
-//        installArchives {
-//            releaseRepositoryUrl = file("${rootProject.buildDir}/localMaven").toURI().toString()
-//            snapshotRepositoryUrl = file("${rootProject.buildDir}/localMaven").toURI().toString()
-//        }
-//    }
-//}
+apply plugin: 'com.vanniktech.maven.publish'
+mavenPublish {
+    releaseSigningEnabled = false
+    targets {
+        uploadArchives {
+            releaseRepositoryUrl = RELEASE_REPOSITORY_URL
+            snapshotRepositoryUrl = SNAPSHOT_REPOSITORY_URL
+            repositoryUsername = SONATYPE_NEXUS_USERNAME
+            repositoryPassword = SONATYPE_NEXUS_PASSWORD
+        }
+
+        installArchives {
+            releaseRepositoryUrl = file("${rootProject.buildDir}/localMaven").toURI().toString()
+            snapshotRepositoryUrl = file("${rootProject.buildDir}/localMaven").toURI().toString()
+        }
+    }
+}

@@ -72,6 +72,8 @@ dependencies {
     debugImplementation dep.leakcanary
 
     implementation dep.flexbox
+    implementation dep.adapter
+    implementation dep.coil
 
     compileOnly dep.androidX.annotation.annotation
     implementation dep.androidX.material
@@ -167,20 +169,20 @@ dependencies {
     implementation dep.androidX.compose.uiTooling
 }
 
-//apply plugin: 'com.vanniktech.maven.publish'
-//mavenPublish {
-//    releaseSigningEnabled = false
-//    targets {
-//        uploadArchives {
-//            releaseRepositoryUrl = RELEASE_REPOSITORY_URL
-//            snapshotRepositoryUrl = SNAPSHOT_REPOSITORY_URL
-//            repositoryUsername = SONATYPE_NEXUS_USERNAME
-//            repositoryPassword = SONATYPE_NEXUS_PASSWORD
-//        }
-//
-//        installArchives {
-//            releaseRepositoryUrl = file("${rootProject.buildDir}/localMaven").toURI().toString()
-//            snapshotRepositoryUrl = file("${rootProject.buildDir}/localMaven").toURI().toString()
-//        }
-//    }
-//}
+apply plugin: 'com.vanniktech.maven.publish'
+mavenPublish {
+    releaseSigningEnabled = false
+    targets {
+        uploadArchives {
+            releaseRepositoryUrl = RELEASE_REPOSITORY_URL
+            snapshotRepositoryUrl = SNAPSHOT_REPOSITORY_URL
+            repositoryUsername = SONATYPE_NEXUS_USERNAME
+            repositoryPassword = SONATYPE_NEXUS_PASSWORD
+        }
+
+        installArchives {
+            releaseRepositoryUrl = file("${rootProject.buildDir}/localMaven").toURI().toString()
+            snapshotRepositoryUrl = file("${rootProject.buildDir}/localMaven").toURI().toString()
+        }
+    }
+}

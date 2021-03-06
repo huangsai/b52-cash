@@ -28,6 +28,8 @@ buildscript {
             new Date().format('yyyyMMddHHmmss')
 
     ext.versions = [
+            'android_11'       : '11-robolectric-6757853',
+            'android_10'       : '10-robolectric-5803371',
             'mavenPublish'     : '0.13.0',
             'desugaring'       : '1.1.5',
             'dokka'            : '1.4.20',
@@ -48,7 +50,7 @@ buildscript {
             'timber'           : '4.7.1',
             'glide'            : '4.12.0',
             'coil'             : '1.1.1',
-            'mmkv'             : '1.2.2',
+            'mmkv'             : '1.2.7',
             'gravitySnapHelper': '2.2.1',
             'javaxAnnotation'  : '1.3.2',
             'errorProne'       : '2.5.1',
@@ -62,7 +64,7 @@ buildscript {
             'paho'             : '1.2.5',
             'flexbox'          : '2.0.1',
             'store'            : '4.0.0',
-            'pacificAdapter'   : '3.0.3',
+            'adapter'          : '3.0.3',
             'exoplayer'        : '2.13.2',
             'insetter'         : '0.5.0',
             'emoji'            : '0.7.0',
@@ -145,7 +147,7 @@ buildscript {
                     'viewpager2'                : '1.1.0-alpha01',
                     'webkit'                    : '1.3.0',
                     'window'                    : '1.0.0-alpha03',
-                    'windowExt'                    : '1.0.0-alpha01',
+                    'windowExt'                 : '1.0.0-alpha01',
                     'versionedparcelable'       : '1.1.1',
                     'test'                      : '1.4.0-alpha04',
                     'espresso'                  : '3.4.0-alpha04',
@@ -166,6 +168,8 @@ buildscript {
     ]
 
     ext.dep = [
+            'android_11'       : "org.robolectric:android-all:${versions.android_11}",
+            'android_10'       : "org.robolectric:android-all:${versions.android_10}",
             'desugaring'       : "com.android.tools:desugar_jdk_libs:${versions.desugaring}",
             'junit'            : "junit:junit:${versions.junit}",
             'mockito'          : "org.mockito:mockito-core:${versions.mockito}",
@@ -182,7 +186,8 @@ buildscript {
             'paho'             : "org.eclipse.paho:org.eclipse.paho.mqttv5.client:${versions.paho}",
             'flexbox'          : "com.google.android:flexbox:${versions.flexbox}",
             'store'            : "com.dropbox.mobile.store:store4:${versions.store}",
-            'pacificAdapter'   : "com.github.thepacific:adapter:${versions.pacificAdapter}",
+            'coil'             : "io.coil-kt:coil:${versions.coil}",
+            'adapter'          : "com.github.thepacific:adapter:${versions.adapter}",
 
             'kotlin'           : [
                     'stdlibJdk8': "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin}",

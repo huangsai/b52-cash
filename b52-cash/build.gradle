@@ -26,6 +26,18 @@ buildscript {
 
 allprojects { project ->
 
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        google()
+
+        maven { url "https://plugins.gradle.org/m2/" }
+        maven { url "https://kotlin.bintray.com/kotlinx" }
+        maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
+        maven { url "https://jitpack.io" }
+        maven { url "http://10.17.4.29:8081/repository/maven-releases/" }
+    }
+
     configurations.all {
         resolutionStrategy {
             eachDependency { details ->
@@ -76,6 +88,7 @@ allprojects { project ->
 }
 
 subprojects { project ->
+
     afterEvaluate {
         if (project.plugins.hasPlugin('android') || project.plugins.hasPlugin('android-library')) {
             android {
@@ -106,6 +119,7 @@ subprojects { project ->
 
                 kotlinOptions {
                     jvmTarget = "1.8"
+                    freeCompilerArgs += '-Xopt-in=kotlin.RequiresOptIn'
                 }
 
                 composeOptions {
@@ -156,7 +170,11 @@ subprojects { project ->
 
                     exclude 'version.txt'
                     exclude 'androidsupportmultidexversion.txt'
-                    exclude 'META-INF/library_release.kotlin_module'
+
+                    exclude 'META-INF/atomicfu.kotlin_module'
+                    exclude 'META-INF/common.kotlin_module'
+                    exclude 'META-INF/android_debug.kotlin_module'
+                    exclude 'META-INF/android_release.kotlin_module'
                 }
             }
         } else {
@@ -169,6 +187,7 @@ subprojects { project ->
             compileKotlin {
                 kotlinOptions {
                     jvmTarget = "1.8"
+                    freeCompilerArgs += '-Xopt-in=kotlin.RequiresOptIn'
                 }
             }
         }

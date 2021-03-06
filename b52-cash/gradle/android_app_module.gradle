@@ -94,6 +94,8 @@ dependencies {
     debugImplementation dep.leakcanary
 
     implementation dep.flexbox
+    implementation dep.adapter
+    implementation dep.coil
 
     compileOnly dep.androidX.annotation.annotation
     implementation dep.androidX.material
