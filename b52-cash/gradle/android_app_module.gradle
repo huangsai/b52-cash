@@ -189,4 +189,12 @@ dependencies {
     implementation dep.androidX.compose.uiTooling
     implementation dep.androidX.compose.foundation
     implementation dep.androidX.compose.uiTooling
+    implementation dep.androidX.compose.livedata
+    implementation dep.androidX.compose.rxjava3
+
+    implementation dep.company.guavaJvm
+    implementation dep.company.guavaAndroid
+    implementation dep.company.guavaAndroidUi
+    implementation dep.company.guavaData
+    implementation dep.company.guavaMvvm
 }

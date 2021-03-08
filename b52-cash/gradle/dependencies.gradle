@@ -68,6 +68,7 @@ buildscript {
             'exoplayer'        : '2.13.2',
             'insetter'         : '0.5.0',
             'emoji'            : '0.7.0',
+            'theGuava'         : '1.0.0-alpha2',
 
             'androidX'         : [
                     'compose'                   : '1.0.0-beta01',
@@ -254,16 +255,11 @@ buildscript {
                     'okhttp'         : "com.google.android.exoplayer:extension-okhttp:${versions.exoplayer}"
             ],
             'company'          : [
-                    'guavaJvm'      : "com.mobile.guava:guava-jvm:${versions.theGuava}",
-                    'guavaAndroid'  : "com.mobile.guava:guava-android:${versions.theGuava}",
-                    'guavaAndroidUi': "com.mobile.guava:guava-android-ui:${versions.theGuava}",
-                    'guavaData'     : "com.mobile.guava:guava-data:${versions.theGuava}",
-                    'guavaMvvm'     : "com.mobile.guava:guava-android-mvvm:${versions.theGuava}",
-                    'extGlide'      : "com.mobile.ext:ext-glide:${versions.theExt}",
-                    'extRxjava3'    : "com.mobile.ext:ext-rxjava3:${versions.theExt}",
-                    'extExo'        : "com.mobile.ext:ext-exo:${versions.theExt}",
-                    'sdkIpv6'       : "com.mobile.sdk:sdk-ipv6:${versions.theSdk}",
-                    'sdkSister'     : "com.mobile.sdk:sdk-sister:${versions.theSdk}"
+                    'guavaJvm'      : "com.mobile.guava1:guava-jvm:${versions.theGuava}",
+                    'guavaAndroid'  : "com.mobile.guava1:guava-android:${versions.theGuava}",
+                    'guavaAndroidUi': "com.mobile.guava1:guava-android-ui:${versions.theGuava}",
+                    'guavaData'     : "com.mobile.guava1:guava-data:${versions.theGuava}",
+                    'guavaMvvm'     : "com.mobile.guava1:guava-android-mvvm:${versions.theGuava}"
             ],
             'insetter'         : [
                     'insetter': "dev.chrisbanes.insetter:insetter:${versions.insetter}",
@@ -277,6 +273,8 @@ buildscript {
                             'test'      : "androidx.compose.ui:ui-test-junit4:${versions.androidX.compose}",
                             'material'  : "androidx.compose.material:material:${versions.androidX.compose}",
                             'foundation': "androidx.compose.foundation:foundation:${versions.androidX.compose}",
+                            'livedata'  : "androidx.compose.runtime:runtime-livedata:${versions.androidX.compose}",
+                            'rxjava3'   : "androidx.compose.runtime:runtime-rxjava3:${versions.androidX.compose}",
                     ],
                     'activity'           : [
                             'activity': "androidx.activity:activity:${versions.androidX.activity}",

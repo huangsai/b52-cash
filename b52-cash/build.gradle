@@ -16,7 +16,7 @@ buildscript {
 
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.0-alpha08"
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.30"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
         classpath "org.jetbrains.kotlin:kotlin-serialization:${versions.kotlin}"
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:${versions.dokka}"
         classpath "com.vanniktech:gradle-maven-publish-plugin:${versions.mavenPublish}"
@@ -70,6 +70,8 @@ allprojects { project ->
                     details.useVersion versions.androidX.arch
                 } else if (group == 'androidx.annotation' && name == 'annotation') {
                     details.useVersion versions.androidX.annotation
+                } else if (group.startsWith('androidx.compose')) {
+                    details.useVersion versions.androidX.compose
                 }
             }
         }
@@ -175,6 +177,8 @@ subprojects { project ->
                     exclude 'META-INF/common.kotlin_module'
                     exclude 'META-INF/android_debug.kotlin_module'
                     exclude 'META-INF/android_release.kotlin_module'
+                    exclude 'META-INF/library_release.kotlin_module'
+                    exclude 'META-INF/library_debug.kotlin_module'
                 }
             }
         } else {
