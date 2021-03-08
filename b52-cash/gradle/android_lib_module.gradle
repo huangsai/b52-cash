@@ -162,6 +162,15 @@ dependencies {
     kapt dep.androidX.remotecallback.processor
     implementation dep.androidX.multidex.multidex
 
+    implementation dep.insetter.insetter
+    implementation dep.insetter.widgets
+
+    implementation dep.workflow.core
+    implementation dep.workflow.uiCoreAndroid
+    implementation dep.workflow.uiModalAndroid
+    implementation dep.workflow.uiBackstackAndroid
+    testImplementation dep.workflow.testing
+
     implementation dep.androidX.compose.ui
     implementation dep.androidX.compose.material
     implementation dep.androidX.compose.uiTooling

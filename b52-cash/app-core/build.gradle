@@ -2,4 +2,11 @@ apply from: "../gradle/android_lib_module.gradle"
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api project(":app-store")
+    api project(":app-workflow")
+    api project(":app-views")
+
+    api project(":app-sdk")
+    api project(":app-github")
 }

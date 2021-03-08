@@ -28,6 +28,7 @@ object StoreX {
             return
         }
 
+        platformPrefs.flavorId = 100
         component = DaggerStoreComponent.factory().create(
             platformDatabase,
             platformContext,

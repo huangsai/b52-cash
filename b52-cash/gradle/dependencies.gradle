@@ -68,6 +68,7 @@ buildscript {
             'exoplayer'        : '2.13.2',
             'insetter'         : '0.5.0',
             'emoji'            : '0.7.0',
+            'workflow'         : '1.0.0-alpha.10',
             'theGuava'         : '1.0.0-alpha2',
 
             'androidX'         : [
@@ -260,6 +261,13 @@ buildscript {
                     'guavaAndroidUi': "com.mobile.guava1:guava-android-ui:${versions.theGuava}",
                     'guavaData'     : "com.mobile.guava1:guava-data:${versions.theGuava}",
                     'guavaMvvm'     : "com.mobile.guava1:guava-android-mvvm:${versions.theGuava}"
+            ],
+            'workflow'         : [
+                    'core'              : "com.squareup.workflow1:workflow-core-jvm:${versions.workflow}",
+                    'testing'           : "com.squareup.workflow1:workflow-testing-jvm:${versions.workflow}",
+                    'uiCoreAndroid'     : "com.squareup.workflow1:workflow-ui-core-android:${versions.workflow}",
+                    'uiModalAndroid'    : "com.squareup.workflow1:workflow-ui-modal-android:${versions.workflow}",
+                    'uiBackstackAndroid': "com.squareup.workflow1:workflow-ui-backstack-android:${versions.workflow}",
             ],
             'insetter'         : [
                     'insetter': "dev.chrisbanes.insetter:insetter:${versions.insetter}",

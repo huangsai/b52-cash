@@ -2,6 +2,4 @@ apply from: "../gradle/jvm_module.gradle"
 
 dependencies {
     compileOnly fileTree(dir: 'libs', include: ['*.jar'])
-
-    compileOnly 'com.mobile.sdk:android11:11'
 }
