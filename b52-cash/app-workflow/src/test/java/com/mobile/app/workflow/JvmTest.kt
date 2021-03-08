@@ -1,4 +1,4 @@
-package com.mobile.app.domain
+package com.mobile.app.workflow
 
 import org.junit.Test
 import org.junit.runner.RunWith

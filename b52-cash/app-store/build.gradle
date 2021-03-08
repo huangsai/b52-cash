@@ -1,5 +1,9 @@
 apply from: "../gradle/jvm_module.gradle"
 
+sourceSets {
+    main.java.srcDirs += "${buildDir}/generated/source/kapt/main"
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
