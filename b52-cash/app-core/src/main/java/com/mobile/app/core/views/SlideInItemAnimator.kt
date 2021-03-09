@@ -31,8 +31,8 @@ open class SlideInItemAnimator @JvmOverloads constructor(
             Gravity.LEFT -> holder.itemView.translationX = -holder.itemView.width / 3f
             Gravity.TOP -> holder.itemView.translationY = -holder.itemView.height / 3f
             Gravity.RIGHT -> holder.itemView.translationX = holder.itemView.width / 3f
-            else // Gravity.BOTTOM
-            -> holder.itemView.translationY = holder.itemView.height / 3f
+            // Gravity.BOTTOM
+            else -> holder.itemView.translationY = holder.itemView.height / 3f
         }
         pendingAdds.add(holder)
         return true
