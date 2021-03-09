@@ -5,27 +5,9 @@ buildscript {
             'buildTools': '30.0.3',
             'minSdk'    : 21,
             'targetSdk' : 30,
-            'version'   : [
-                    'major': 1,
-                    'minor': 0,
-                    'patch': 0,
-                    'build': 0
-            ]
+            'code'      : 1,
+            'name'      : '1.0.0-alpha01'
     ]
-
-    ext.buildConfig.version['code'] = buildConfig.version.major * 1000000 +
-            buildConfig.version.minor * 10000 +
-            buildConfig.version.patch * 100 +
-            buildConfig.version.build
-
-    ext.buildConfig.version['name'] = "${buildConfig.version.major}." +
-            "${buildConfig.version.minor}." +
-            "${buildConfig.version.patch}"
-
-    ext.buildConfig.version['fullName'] = "${buildConfig.version.major}." +
-            "${buildConfig.version.minor}." +
-            "${buildConfig.version.patch}." +
-            new Date().format('yyyyMMddHHmmss')
 
     ext.versions = [
             'android_11'       : '11-robolectric-6757853',

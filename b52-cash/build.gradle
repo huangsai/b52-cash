@@ -15,7 +15,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:7.0.0-alpha08"
+        classpath 'com.android.tools.build:gradle:7.0.0-alpha09'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.30"
         classpath "org.jetbrains.kotlin:kotlin-serialization:${versions.kotlin}"
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:${versions.dokka}"
@@ -35,6 +35,7 @@ allprojects { project ->
         maven { url "https://kotlin.bintray.com/kotlinx" }
         maven { url "https://dl.bintray.com/kotlin/kotlin-eap" }
         maven { url "https://jitpack.io" }
+
         maven { url "http://10.17.4.29:8081/repository/maven-releases/" }
     }
 
@@ -100,8 +101,8 @@ subprojects { project ->
                 defaultConfig {
                     minSdkVersion buildConfig.minSdk
                     targetSdkVersion buildConfig.targetSdk
-                    versionCode buildConfig.version.code
-                    versionName buildConfig.version.name
+                    versionCode buildConfig.code
+                    versionName buildConfig.name
 
                     multiDexEnabled true
                     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

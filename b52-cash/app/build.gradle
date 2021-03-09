@@ -10,8 +10,8 @@ android {
         abi {
             enable true
             reset()
-            include 'armeabi-v7a', 'x86', 'x86_64', 'arm64-v8a'
-            universalApk true
+            include 'x86','arm64-v8a'
+            universalApk false
         }
     }
 
@@ -36,6 +36,19 @@ android {
             minifyEnabled true
             signingConfig signingConfigs.debug
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (variant.buildType.name == 'release') {
+                String date = new Date().format("yyyyMMdd")
+                String abiName = output.getFilter("ABI")
+                if (abiName == null || abiName.isEmpty()) {
+                    abiName = "all"
+                }
+                outputFileName = "app-${variant.versionName}-${abiName}-${date}.apk"
+            }
         }
     }
 }
