@@ -50,14 +50,15 @@ buildscript {
             'exoplayer'        : '2.13.2',
             'insetter'         : '0.5.0',
             'emoji'            : '0.7.0',
-            'workflow'         : '1.0.0-alpha.10',
+            'workflow'         : '1.0.0-alpha.12',
+            'mavericks'        : '2.1.0',
             'theGuava'         : '1.0.0-alpha2',
 
             'androidX'         : [
-                    'compose'                   : '1.0.0-beta01',
-                    'activity'                  : '1.3.0-alpha03',
+                    'compose'                   : '1.0.0-beta02',
+                    'activity'                  : '1.3.0-alpha04',
                     'annotation'                : '1.2.0-rc01',
-                    'annotationExperimental'    : '1.1.0-beta01',
+                    'annotationExperimental'    : '1.1.0-rc01',
                     'annotationExperimentalLint': '1.0.0',
                     'appcompat'                 : '1.3.0-beta01',
                     'arch'                      : '2.1.0',
@@ -78,13 +79,13 @@ buildscript {
                     'contentpager'              : '1.0.0',
                     'coordinatorlayout'         : '1.1.0',
                     // core diff
-                    'core'                      : '1.5.0-beta02',
+                    'core'                      : '1.5.0-beta03',
                     'coreAnimation'             : '1.0.0-alpha02',
                     'coreRole'                  : '1.1.0-alpha01',
 
                     'cursoradapter'             : '1.0.0',
                     'customview'                : '1.1.0',
-                    'datastore'                 : '1.0.0-alpha07',
+                    'datastore'                 : '1.0.0-alpha08',
                     'drawerlayout'              : '1.1.1',
                     // dynamicanimation diff
                     'dynamicanimation'          : '1.1.0-alpha03',
@@ -92,17 +93,17 @@ buildscript {
 
                     'emoji'                     : '1.1.0',
                     'exifinterface'             : '1.2.0',
-                    'fragment'                  : '1.3.0-rc01',
+                    'fragment'                  : '1.3.1',
                     'interpolator'              : '1.0.0',
                     'lifecycle'                 : '2.3.0',
-                    'lifecycleCompose'          : '1.0.0-alpha02',
+                    'lifecycleCompose'          : '1.0.0-alpha03',
                     'loader'                    : '1.1.0',
                     // multidex diff
                     'multidex'                  : '2.0.1',
                     'multidexInstrumentation'   : '2.0.0',
 
-                    'navigation'                : '2.3.3',
-                    'paging'                    : '3.0.0-beta01',
+                    'navigation'                : '2.3.4',
+                    'paging'                    : '3.0.0-beta02',
                     'palette'                   : '1.0.0',
                     'preference'                : '1.1.1',
                     'recommendation'            : '1.0.0',
@@ -111,7 +112,7 @@ buildscript {
                     'recyclerviewSelection'     : '1.1.0',
 
                     'remotecallback'            : '1.0.0-alpha02',
-                    'room'                      : '2.3.0-beta02',
+                    'room'                      : '2.3.0-beta03',
                     // savedstate diff
                     'savedstate'                : '1.1.0',
                     'savedstateBundle'          : '1.0.0-alpha01',
@@ -130,7 +131,7 @@ buildscript {
                     'viewpager'                 : '1.0.0',
                     'viewpager2'                : '1.1.0-alpha01',
                     'webkit'                    : '1.3.0',
-                    'window'                    : '1.0.0-alpha03',
+                    'window'                    : '1.0.0-alpha04',
                     'windowExt'                 : '1.0.0-alpha01',
                     'versionedparcelable'       : '1.1.1',
                     'test'                      : '1.4.0-alpha04',
@@ -244,6 +245,7 @@ buildscript {
                     'guavaData'     : "com.mobile.guava1:guava-data:${versions.theGuava}",
                     'guavaMvvm'     : "com.mobile.guava1:guava-android-mvvm:${versions.theGuava}"
             ],
+            'mavericks'             : "com.airbnb.android:mavericks:${versions.mavericks}",
             'workflow'         : [
                     'core'              : "com.squareup.workflow1:workflow-core-jvm:${versions.workflow}",
                     'testing'           : "com.squareup.workflow1:workflow-testing-jvm:${versions.workflow}",

@@ -1,5 +1,9 @@
 apply from: "../gradle/android_lib_module.gradle"
 
+android {
+    resourcePrefix "cash_"
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 }

@@ -187,11 +187,7 @@ dependencies {
     implementation dep.insetter.insetter
     implementation dep.insetter.widgets
 
-    implementation dep.workflow.core
-    implementation dep.workflow.uiCoreAndroid
-    implementation dep.workflow.uiModalAndroid
-    implementation dep.workflow.uiBackstackAndroid
-    testImplementation dep.workflow.testing
+    implementation dep.mavericks
 
     implementation dep.androidX.compose.ui
     implementation dep.androidX.compose.material

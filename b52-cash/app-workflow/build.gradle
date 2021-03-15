@@ -1,5 +1,0 @@
-apply from: "../gradle/jvm_module.gradle"
-
-dependencies {
-    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
-}

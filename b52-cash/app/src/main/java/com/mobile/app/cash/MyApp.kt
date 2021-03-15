@@ -1,7 +1,7 @@
 package com.mobile.app.cash
 
 import androidx.multidex.MultiDexApplication
-import com.mobile.app.core.CoreX
+import com.mobile.app.cash.core.CoreX
 
 class MyApp : MultiDexApplication() {
 

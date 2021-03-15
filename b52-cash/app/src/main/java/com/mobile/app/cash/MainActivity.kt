@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
 
 @Preview
+
 @Composable
 fun Greeting(name: String) {
     Text (
