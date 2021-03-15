@@ -3,7 +3,7 @@
 * Android Studio 4.1.2 + Gradle 6.8.8
 * Java 8 + Kotlin 1.4.30
 * Jetpack
-* Workflow
+* MVVM + MVI
 
 
 # 模块说明
@@ -26,7 +26,7 @@ bundle-x模块之间不存在直接依赖关系且代码天然隔绝，他们的
 
 ## app-views模块
 
-静态资源
+静态资源包括图片、布局文件、颜色、字符串、尺寸
 
 
 ## app-core模块
@@ -41,11 +41,22 @@ android平台层、功能模块之间路由、工具集合
 
 ## bundle-main模块
 
+启动页、首页、设置、app更新等
 
-## bundle-auth模块
+
+## bundle-authenticator模块
+
+用户登录注册、身份验证
 
 
-## bundle-mine模块
+## bundle-payment模块
+
+支付相关、交易相关
+
+
+## bundle-im模块
+
+在线客服、im聊天模块
 
 
 ## 代码组织规则
