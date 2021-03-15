@@ -1,4 +1,4 @@
-package com.mobile.app.cash.github
+package com.mobile.app.cash.sdk
 
 import org.junit.Test
 

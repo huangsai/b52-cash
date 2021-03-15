@@ -15,7 +15,7 @@ buildscript {
             'mavenPublish'     : '0.13.0',
             'desugaring'       : '1.1.5',
             'dokka'            : '1.4.20',
-            'kotlin'           : '1.4.30',
+            'kotlin'           : '1.4.31',
             'ktCoroutines'     : '1.4.3',
             'ktSerialization'  : '1.1.0',
             'reflection'       : '0.9.13',
@@ -52,7 +52,7 @@ buildscript {
             'emoji'            : '0.7.0',
             'workflow'         : '1.0.0-alpha.12',
             'mavericks'        : '2.1.0',
-            'theGuava'         : '1.0.0-alpha2',
+            'theGuava'         : '1.0.0-alpha3',
 
             'androidX'         : [
                     'compose'                   : '1.0.0-beta02',

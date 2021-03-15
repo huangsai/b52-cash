@@ -1,0 +1,5 @@
+<resources>
+    <string name="cash_app_name">b52-cash</string>
+    <string name="cash_common_alert_title">温馨提示</string>
+    <string name="cash_common_alert_without_permission">应用必须权限不够，将自动退出</string>
+</resources>

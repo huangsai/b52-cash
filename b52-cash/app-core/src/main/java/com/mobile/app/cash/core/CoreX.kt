@@ -2,6 +2,7 @@ package com.mobile.app.cash.core
 
 import android.app.Application
 import androidx.room.Room
+import com.airbnb.mvrx.Mavericks
 import com.mobile.app.cash.core.base.AppDatabase
 import com.mobile.app.cash.core.base.AppPrefs
 import com.mobile.app.cash.core.base.BugTree
@@ -27,6 +28,7 @@ object CoreX {
         StoreX.setup(createAppDatabase(), AppContext(), AppPrefs)
 
         AppManager.initialize()
+        Mavericks.initialize(app)
     }
 
     private fun createAppDatabase(): AppDatabase {

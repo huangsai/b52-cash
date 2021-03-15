@@ -4,4 +4,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     api project(":app-store")
+    api project(":app-views")
+    api project(":app-github")
+    api project(":app-sdk")
 }

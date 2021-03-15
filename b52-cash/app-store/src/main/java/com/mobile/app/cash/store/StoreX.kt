@@ -4,7 +4,7 @@ import com.mobile.app.cash.store.db.PlatformDatabase
 import com.mobile.app.cash.store.file.PlatformPrefs
 import com.mobile.guava.data.PlatformContext
 import com.mobile.app.cash.store.dagger.StoreComponent
-import com.mobile.app.store.dagger.DaggerStoreComponent
+import com.mobile.app.cash.store.dagger.DaggerStoreComponent
 
 object StoreX {
 
