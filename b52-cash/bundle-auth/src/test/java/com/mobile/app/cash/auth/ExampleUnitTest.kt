@@ -1,4 +1,4 @@
-package com.mobile.app.cash.authenticator
+package com.mobile.app.cash.auth
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.mobile.app.cash.authenticator
+package com.mobile.app.cash.auth
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.mobile.app.cash.authenticator.test", appContext.packageName)
+        assertEquals("com.mobile.app.cash.auth.test", appContext.packageName)
     }
 }

@@ -60,5 +60,5 @@ dependencies {
     implementation project(":bundle-im")
     implementation project(":bundle-main")
     implementation project(":bundle-payment")
-    implementation project(":bundle-authenticator")
+    implementation project(":bundle-auth")
 }
