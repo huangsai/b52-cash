@@ -12,7 +12,7 @@ import com.mobile.app.cash.views.databinding.CashFragmentBlockWalletBinding
 /**
  * 区块钱包
  */
-class BlockWalletFragment : MyBaseFragment(R.layout.cash_fragment_block_wallet) {
+class BlockWalletFragment : MyBaseFragment() {
 
     private var _binding: CashFragmentBlockWalletBinding? = null
     private val binding: CashFragmentBlockWalletBinding get() = _binding!!

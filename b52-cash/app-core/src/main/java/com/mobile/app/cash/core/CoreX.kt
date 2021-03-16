@@ -6,6 +6,7 @@ import com.airbnb.mvrx.Mavericks
 import com.mobile.app.cash.core.base.AppDatabase
 import com.mobile.app.cash.core.base.AppPrefs
 import com.mobile.app.cash.core.base.BugTree
+import com.mobile.app.cash.core.dagger.CoreComponent
 import com.mobile.app.cash.store.StoreX
 import com.mobile.guava.android.context.AppUtils
 import com.mobile.guava.android.mvvm.AndroidX
@@ -19,11 +20,20 @@ object CoreX {
         AppUtils.getPackageName(AndroidX.myApp) + ".fileProvider"
     }
 
-    fun setup(app: Application, isDebug: Boolean) {
+    lateinit var component: CoreComponent
+        private set
+
+    fun setup(
+        app: Application,
+        coreComponent: CoreComponent,
+        isDebug: Boolean
+    ) {
         if (isDebug) {
         } else {
             Timber.plant(BugTree())
         }
+
+        component = coreComponent
         AndroidX.setup(app, isDebug)
         StoreX.setup(createAppDatabase(), AppContext(), AppPrefs)
 

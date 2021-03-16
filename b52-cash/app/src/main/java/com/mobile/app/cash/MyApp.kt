@@ -7,6 +7,11 @@ class MyApp : MultiDexApplication() {
 
     override fun onCreate() {
         super.onCreate()
-        CoreX.setup(this, BuildConfig.DEBUG)
+
+        CoreX.setup(
+            this,
+            DaggerAppComponent.factory().create(),
+            BuildConfig.DEBUG
+        )
     }
 }

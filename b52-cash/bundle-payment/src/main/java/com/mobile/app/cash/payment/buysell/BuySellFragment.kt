@@ -12,7 +12,7 @@ import com.mobile.app.cash.views.databinding.CashFragmentBuySellBinding
 /**
  * 买卖
  */
-class BuySellFragment : MyBaseFragment(R.layout.cash_fragment_buy_sell) {
+class BuySellFragment : MyBaseFragment() {
 
     private var _binding: CashFragmentBuySellBinding? = null
     private val binding: CashFragmentBuySellBinding get() = _binding!!
