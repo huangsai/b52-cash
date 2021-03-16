@@ -2,4 +2,9 @@
     <string name="cash_app_name">b52-cash</string>
     <string name="cash_common_alert_title">温馨提示</string>
     <string name="cash_common_alert_without_permission">应用必须权限不够，将自动退出</string>
+    <string name="cash_main_tab_text_one">区块钱包</string>
+    <string name="cash_main_tab_text_two">游戏钱包</string>
+    <string name="cash_main_tab_text_three">买卖</string>
+    <string name="cash_main_tab_text_four">客服</string>
+    <string name="cash_main_tab_text_five">我的</string>
 </resources>
