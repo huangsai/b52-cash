@@ -72,18 +72,3 @@ android平台层、功能模块之间路由、工具集合
 - APP下拉刷新、上拉加载、页面loading、弹窗统一，特殊样式除外
 
 - APP同一个模块下，相同UI可以共用，否则就复制粘贴再修改
-
-
-## 命名规范
-
-- 全局采用驼峰命名
-
-- 布局xml命名：模块_功能_activity/fragment/layout
-
-- 资源图片命名：模块_功能_功能_bg/icon...
-
-- 资源drawable命名：模块_功能_功能_drawable...
-
-- 资源selector命名：模块_功能_功能_selector...
-
-- 资源color命名：模块_功能_功能_color...
