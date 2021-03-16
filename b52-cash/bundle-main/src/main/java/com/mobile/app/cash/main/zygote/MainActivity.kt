@@ -50,6 +50,9 @@ class MainActivity : MyBaseActivity(R.layout.cash_activity_main) {
         permissionLauncher.launch(neededPermissions)
     }
 
+    /**
+     * 沉浸式处理系统控件边界
+     */
     override fun setupWindowInsets() {
         Insetter.builder()
             .padding(
@@ -59,9 +62,15 @@ class MainActivity : MyBaseActivity(R.layout.cash_activity_main) {
             .applyToView(binding.root)
     }
 
+    /**
+     * 所有条件具备后，开始初始化界面
+     */
     private fun setup() {
     }
 
+    /**
+     * 当必要权限没有得倒授权，强制退出APP
+     */
     private fun withoutPermission() {
         MaterialAlertDialogBuilder(this, R.style.cash_CommonAlertDialog)
             .setCancelable(false)
