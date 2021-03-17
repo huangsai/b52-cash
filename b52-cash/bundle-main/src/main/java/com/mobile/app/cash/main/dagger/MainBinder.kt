@@ -2,6 +2,7 @@ package com.mobile.app.cash.main.dagger
 
 import androidx.lifecycle.ViewModel
 import com.mobile.app.cash.main.zygote.MainViewModel
+import com.mobile.app.cash.main.zygote.SplashViewModel
 import com.mobile.guava.android.mvvm.dagger.FeatureScopeViewModelFactoryBinder
 import com.mobile.guava.android.mvvm.dagger.ViewModelKey
 import dagger.Binds
@@ -15,4 +16,9 @@ abstract class MainBinder {
     @IntoMap
     @ViewModelKey(MainViewModel::class)
     abstract fun bindMainViewModel(it: MainViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(SplashViewModel::class)
+    abstract fun bindSplashViewModel(it: SplashViewModel): ViewModel
 }

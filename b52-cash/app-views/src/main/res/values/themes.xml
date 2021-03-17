@@ -10,12 +10,17 @@
         <item name="colorSecondaryVariant">@android:color/black</item>
         <item name="colorOnSecondary">@android:color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/cash_status_bar</item>
+        <item name="android:statusBarColor">@color/cash_status_bar</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="cash_SplashTheme" parent="cash_AppTheme">
+    <style name="cash_SplashTheme" parent="Theme.MaterialComponents.NoActionBar">
         <item name="android:windowBackground">@drawable/cash_splash_window</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:statusBarColor">@color/cash_splash_status_bar</item>
+        <item name="android:navigationBarColor">@color/cash_splash_status_bar</item>
     </style>
 
     <style name="cash_CommonAlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
@@ -26,7 +31,7 @@
         <item name="android:textColor">@android:color/black</item>
     </style>
 
-    <style name="cash_SplashDialog">
+    <style name="cash_SplashDialogFragment">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:backgroundDimEnabled">false</item>

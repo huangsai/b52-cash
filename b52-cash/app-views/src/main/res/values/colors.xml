@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="cash_status_bar">#33000000</color>
+    <color name="cash_bg">@android:color/white</color>
+
+    <color name="cash_splash_status_bar">#03000000</color>
+    <color name="cash_splash_window">@android:color/holo_red_dark</color>
+
 </resources><!--
 =====================================================================
 Github @link  https://gist.github.com/lopspower/03fb1cc0ac9f32ef38f4

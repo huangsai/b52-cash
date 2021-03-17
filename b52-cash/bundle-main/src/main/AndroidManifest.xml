@@ -5,7 +5,7 @@
     <application>
 
         <activity
-            android:name="com.mobile.app.cash.main.zygote.MainActivity"
+            android:name="com.mobile.app.cash.main.zygote.SplashActivity"
             android:configChanges="keyboard|screenSize|screenLayout|orientation|layoutDirection"
             android:exported="true"
             android:theme="@style/cash_SplashTheme"
@@ -17,6 +17,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mobile.app.cash.main.zygote.MainActivity"
+            android:configChanges="keyboard|screenSize|screenLayout|orientation|layoutDirection"
+            android:screenOrientation="portrait">
         </activity>
 
     </application>
