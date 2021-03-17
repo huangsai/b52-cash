@@ -7,4 +7,7 @@ sealed class IntentKey {
 
     @Parcelize
     class MainActivity(val id: Long) : IntentKey(), Parcelable
+
+    @Parcelize
+    class AuthActivity(val id: Long) : IntentKey(), Parcelable
 }

@@ -4,12 +4,4 @@
     android:background="@color/cash_bg"
     style="@style/MatchMatch">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
-        style="@style/ConCon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

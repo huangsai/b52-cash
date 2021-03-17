@@ -10,4 +10,7 @@ sealed class FragmentKey {
 
     @Parcelize
     class GameWalletFragment(val position: Int) : FragmentKey(), Parcelable
+
+    @Parcelize
+    class ImFragment(val position: Int) : FragmentKey(), Parcelable
 }

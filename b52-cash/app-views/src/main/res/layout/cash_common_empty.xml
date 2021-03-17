@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:indeterminate="true"
-        app:indicatorColor="@android:color/holo_green_light" />
+        app:indicatorColor="@android:color/holo_green_dark" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/txt_error"
