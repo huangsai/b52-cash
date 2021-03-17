@@ -19,13 +19,13 @@ class MainNavBinder {
     @IntoMap
     @IntentResolverKey(IntentKey.MainActivity::class)
     fun provideMainActivity(): IntentResolver<*> {
-        return MainActivity
+        return MainActivity.Companion
     }
 
     @Provides
     @IntoMap
     @FragmentResolverKey(FragmentKey.SplashDialogFragment::class)
     fun provideSplashDialogFragment(): FragmentResolver<*> {
-        return SplashDialogFragment
+        return SplashDialogFragment.Companion
     }
 }

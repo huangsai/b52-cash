@@ -3,7 +3,6 @@ package com.mobile.app.cash.core.navigation
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatDialogFragment
-import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.mobile.guava.android.mvvm.dagger.AppScope

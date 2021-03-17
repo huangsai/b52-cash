@@ -3,7 +3,6 @@ package com.mobile.app.cash.main.zygote
 import android.Manifest
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.core.view.WindowCompat
@@ -30,6 +29,9 @@ import dev.chrisbanes.insetter.Insetter
 import dev.chrisbanes.insetter.Side
 import dev.chrisbanes.insetter.windowInsetTypesOf
 
+/**
+ * APP首页
+ */
 class MainActivity : MyBaseActivity(), MainActivityApi {
 
     private lateinit var binding: CashActivityMainBinding
@@ -115,6 +117,9 @@ class MainActivity : MyBaseActivity(), MainActivityApi {
         binding.viewPager.adapter = MyAdapter(this)
     }
 
+    /**
+     * 显示启动页广告
+     */
     private fun showSplashDialogFragment() {
         CoreX.component.navigator().createDialogFragment(
             FragmentKey.SplashDialogFragment(0)
